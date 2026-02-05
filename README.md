@@ -1,126 +1,156 @@
-# 🌾 Farmer Buddy
+🌾 Farmer Buddy — Smart Agriculture Support Platform
 
-Farmer Buddy is a **full-stack agriculture support web application** designed to help farmers and agriculture learners access crop information, ask farming-related questions, and receive expert guidance through an admin-managed system.
+Farmer Buddy is a full-stack web application built to solve real-world agricultural problems by connecting farmers with structured crop knowledge and expert guidance through a role-based system.
 
-The application follows a **monorepo architecture**, with both frontend and backend maintained in a single repository for easy development, deployment, and version control.
+The focus of this project is clean architecture, scalability, and real user workflows, not just feature completion.
 
----
+🎯 Problem It Solves
 
-## 📌 Project Overview
+Farmers often lack:
 
-Farmer Buddy provides a digital platform where:
-- Users can register and log in securely
-- Farmers can submit agricultural queries
-- Admins can view and answer user queries
-- Users can view responses and manage their own queries
-- Crop-related information and advisory sections are available
+Reliable crop guidance in one place
 
----
+Easy ways to ask and track expert advice
 
-## 🧱 Tech Stack
+Structured, searchable agricultural information
 
-| Layer | Technology |
-|------|------------|
-| Frontend | React, JavaScript, CSS |
-| Backend | Node.js, Express |
-| Database | MySQL |
-| Authentication | Email & OTP based |
-| Version Control | Git & GitHub |
+Farmer Buddy addresses this by providing a centralized, interactive agriculture support system.
 
----
+🧠 Key Highlights
 
-## 📁 Project Structure
+End-to-end product development (frontend + backend)
+
+Role-based access control (User / Admin)
+
+OTP-based authentication for security
+
+Real-world workflows: queries, responses, feedback
+
+Designed with scalability and maintainability in mind
+
+🧱 Tech Stack
+Layer	Technology
+Frontend	React, JavaScript, CSS
+Backend	Node.js, Express
+Database	MySQL
+Authentication	Email + OTP
+Version Control	Git, GitHub
+🏗 Architecture
+
+Monorepo structure
+
+Clear separation of frontend and backend
+
+RESTful API design
+
+Modular backend logic for easy extension
 
 farmer-buddy/
-├── frontend/ # React frontend
-│ ├── public/
-│ ├── src/
-│ ├── package.json
-│ └── .gitignore
-│
-├── backend/ # Node.js backend
-│ ├── server.js
-│ ├── package.json
-│ ├── constants.js
-│ └── .gitignore
-│
+├── frontend/        # React application
+│   ├── public/
+│   ├── src/
+│   └── package.json
+├── backend/         # Node.js + Express API
+│   ├── server.js
+│   ├── constants.js
+│   └── package.json
 └── README.md
 
-yaml
-Copy code
+🚀 Features
+👤 User Capabilities
 
----
+Secure registration & login
 
-## 🚀 Features
+OTP-based password reset
 
-### 👤 User Features
-- User registration and login
-- OTP-based password reset
-- Submit farming queries
-- View admin responses
-- Delete own queries
-- Submit feedback
+Submit agriculture-related queries
 
-### 🛠 Admin Features
-- Admin login
-- View all user-submitted queries
-- Answer queries through dashboard
+View expert/admin responses
 
-### 🌱 Agriculture Support
-- Crop information pages
-- Pest and fertilizer advisory section
-- Category-wise crop browsing
+Delete own queries
 
----
+Submit feedback
 
-## ⚙️ Installation & Setup
+🛠 Admin Capabilities
 
-### ✅ Prerequisites
-- Node.js
-- npm
-- MySQL
+Admin authentication
 
----
+View all user queries
 
-### 🖥️ Frontend Setup
+Respond through dashboard
 
-```bash
+Manage query lifecycle
+
+🌱 Agriculture Support
+
+Crop information pages
+
+Pest & fertilizer advisory sections
+
+Category-wise crop browsing
+
+⚙️ Setup & Installation
+✅ Prerequisites
+
+Node.js
+
+npm
+
+MySQL
+
+🖥 Frontend
 cd frontend
 npm install
 npm start
-Frontend runs on:
 
-arduino
-Copy code
+
+Runs on:
 http://localhost:3000
-🖥️ Backend Setup
-Create a .env file inside the backend folder with the following variables:
 
-ini
-Copy code
+🖥 Backend
+
+Create .env inside backend/:
+
 DB_HOST=your_database_host
 DB_USER=your_database_user
 DB_PASS=your_database_password
 DB_NAME=your_database_name
 EMAIL_USER=your_email
 EMAIL_PASS=your_email_password
+
+
 Then run:
 
-bash
-Copy code
 cd backend
 npm install
 node server.js
-Backend runs on:
 
-arduino
-Copy code
+
+Runs on:
 http://localhost:5000
-🔗 API Functionality (Summary)
+
+🔌 API Overview
+
 User authentication (register, login, OTP reset)
 
-Query submission and retrieval
+Query submission & retrieval
 
 Admin query answering
 
-Feedback submission
+Feedback management
+
+🔮 Future Enhancements
+
+AI-based crop advisory
+
+Soil health analysis integration
+
+Mobile-first UI improvements
+
+Real-time notifications
+
+👨‍💻 Author
+
+Prashant Sonarwadikar
+Final-year CSE student (2026)
+Passionate about building scalable, real-world software products.
